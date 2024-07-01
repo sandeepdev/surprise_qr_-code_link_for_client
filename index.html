@@ -3,42 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prepare to be Blinded...</title>
+    <title>Happy Couple</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Great+Vibes&display=swap');
         body {
-            font-family: sans-serif;
-            text-align: center;
-            background-color: #000;
-            color: #fff;
-            height: 100vh;
+            margin: 0;
+            font-family: 'Lora', serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0; /* Remove default margin */
+            height: 100vh;
+            background: linear-gradient(135deg, #fffbd5, #b20a2c);
+            color: #333;
         }
-        h1 {
-            font-size: 5em;
-            margin: 0;
-            font-weight: bold;
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+            max-width: 700px;
+            border: 3px solid #e6c07b; /* Gold color */
         }
-        p {
-            font-size: 1.5em;
-            margin-top: 20px;
+        .container h1 {
+            font-family: 'Great Vibes', cursive;
+            margin-bottom: 10px;
+            color: #e07b39; /* Copper color */
+            font-size: 3.5em;
         }
-
-        /* Media Query for smaller screens */
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 3.5em; /* Adjust font size for smaller screens */
-            }
-            p {
-                font-size: 1.2em; /* Adjust font size for smaller screens */
-            }
+        .container p {
+            margin: 20px 0;
+            font-size: 1.3em;
+            color: #555;
+        }
+        .container .quote {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.7em;
+            margin: 20px 0;
+            color: #b55a30;
+        }
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #e6c07b; /* Gold border for photo */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .decorative-frame {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 80px;
+            height: 80px;
+            background: url('https://img.icons8.com/fluency/48/000000/diamond.png') no-repeat center/contain;
+        }
+        .decorative-frame2 {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 80px;
+            height: 80px;
+            background: url('https://img.icons8.com/fluency/48/000000/diamond.png') no-repeat center/contain;
         }
     </style>
 </head>
 <body>
-    <h1>The future's <span>blindingly bright</span>.</h1>
-    <p>But before you see it, you'll have to wait. Something remarkable is coming.</p>
+    <div class="container">
+        <div class="decorative-frame"></div>
+        <h1>Congratulations!</h1>
+        <p>Wishing you a lifetime of love and happiness.</p>
+        <div class="quote">"Love does not consist in gazing at each other, but in looking outward together in the same direction." – Antoine de Saint-Exupéry</div>
+        <div class="photo">
+            <img src="C:\Users\sande\flutter\New folder\santhul.jpg" alt="Happy Couple">
+        </div>
+        <div class="decorative-frame2"></div>
+    </div>
 </body>
 </html>
